@@ -1,0 +1,165 @@
+/**
+ * Minimal Reset
+ */
+body {
+	margin: 0;
+	background-color: cornflowerblue;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}html {
+	 scroll-behavior: smooth; /*funktioniert noch nicht*/
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 100%;
+ }
+
+main {
+	color: black;
+}
+
+footer {
+	background: darkgrey;
+	color: black;
+}
+
+.header {
+	background-color: rgb(197, 196, 196);
+	position: sticky;
+	top: 0px;
+	border-radius: 10px;
+}
+/* Navigation * * * * * * * * * noch in Arbeit
+
+.navigation{
+  margin: 50px 0 0;
+}
+
+.navigation ul li{
+  display: inline;
+}
+
+.navigation a{
+  color: #333;
+  text-decoration: none;
+  padding: 7px 20px;
+  margin: 10px 10px;
+  border: 1px solid #333;
+}
+
+
+.navigation a:hover {
+  color: #333;
+  background: #fff;
+}
+*/
+
+.test {
+	margin-top: 100vh;
+	height: 100vh;
+}
+/* Card */
+
+/* Auto Layout -noch in Arbeit */
+.adress-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px;
+
+	position: static;
+	width: 800px;
+	height: 283px;
+	left: 0px;
+	top: 0px;
+
+	background: rgb(197, 196, 196);
+	/* Boxshadow_01 */
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+
+	/* Inside Auto Layout*/
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 24px 0px;
+}
+
+.card__image {
+	background: blueviolet;
+	width: 128px;
+	height: 128px;
+}
+.card__headline {
+	position: static;
+	width: 62px;
+	height: 19px;
+	left: 0px;
+	top: 0px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	/* identical to box height */
+
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #202020;
+}
+.card__author {
+	position: static;
+	width: 122px;
+	height: 20px;
+	left: 0px;
+	top: 27px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	/* identical to box height, or 143% */
+
+
+	color: #202020;
+}
+card__myaccount{
+	position: static;
+	width: 70px;
+	height: 14px;
+	left: 0px;
+	top: 0px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	color: #6F6F6F;
+}
+.card__action {
+
+}
+
+.icon-button {
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	/*an dieser Stelle den Button unsichtbar vergrößern Stichwort: accecibilty */
+}
+
+.icon-button:hover {
+	color:red;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	border: 0;
+}
+
