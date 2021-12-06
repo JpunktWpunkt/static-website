@@ -5,20 +5,19 @@
 
 *,
 *::before,
-*::after
-* {
+*::after * {
 	box-sizing: border-box;
 	padding: 0;
 }
 
 html {
-	scroll-behavior: smooth; /*funktioniert noch nicht*/
+	scroll-behavior: smooth;
 	font-size: 100%;
 }
 
 /* Layout* * * * * * */
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	color: black;
@@ -29,37 +28,42 @@ body {
 main {
 	width: 100%;
 }
+.modal {
+	height: 80vh;
+	overflow: auto;
+	background-color: yellow;
+	scroll-behavior: smooth;
+}
 
 .main-header {
 	position: sticky;
 	z-index: 2;
 	background-color: darkgrey;
-	top: 10px;
+	top: 20px;
 	border-radius: 10px;
+	height: 160px;
 }
 
 footer {
 	background: #fff;
-
 }
 /* Navigation * * * * * * * * * noch in Arbeit */
 
-.navigation{
+.navigation {
 	margin: 20px 0 0;
 }
 
-.navigation ul li{
+.navigation ul li {
 	display: inline;
 }
 
-.navigation a{
+.navigation a {
 	color: #333;
 	text-decoration: none;
 	padding: 7px 20px;
 	margin: 10px 10px;
 	border: 1px solid #333;
 	border-radius: 8px;
-
 }
 
 .navigation a:hover {
@@ -72,9 +76,17 @@ footer {
 	margin-top: 100vh;
 	height: 100vh;
 }
+#contact {
+	margin-top: 100vh;
+	height: 100vh;
+}
 
-/* Card *//* Auto Layout -noch in Arbeit */
-.card__header{
+#biography {
+	margin-top: 100vh;
+	height: 100vh;
+}
+/* Card */ /* Auto Layout -noch in Arbeit */
+.card__header {
 }
 .card__box {
 	display: grid;
@@ -82,13 +94,13 @@ footer {
 	gap: 32px;
 }
 
-.card__area{
+.card__area {
 	padding: 16px;
 	font-size: 14px;
 	line-height: 20px;
 	background: #fff;
 	color: #202020;
-	box-shadow: 0px 0px 16px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
 	border-radius: 8px;
 }
 
@@ -106,18 +118,18 @@ footer {
 	color: #202020;
 	letter-spacing: 0.05em;
 }
-.link{
+.link {
 	font-size: 12px;
 	line-height: 14px;
 	text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
 	text-decoration: underline;
 }
 
-.link--light{
-	color: #6F6F6F
+.link--light {
+	color: #6f6f6f;
 }
 
 .icon-button {
@@ -140,15 +152,26 @@ footer {
 }
 /*an dieser Stelle den Button unsichtbar vergrößern Stichwort: accecibilty */
 .icon-button:hover {
-	color:red;
+	color: red;
 }
 
-.icon-button: active {
+.icon-button:active {
 	background: darkblue;
 }
 
 .icon-button_icon {
 	height: 1em;
-	width: 1em‚;
+	width: 1em;
 }
 
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) repeat(2, 3fr);
+	grid-column-gap: 10px;
+}
+.column {
+	background: red;
+}
+.-start-1 {
+	grid-column-start: 3;
+}
