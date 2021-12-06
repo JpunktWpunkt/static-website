@@ -28,7 +28,6 @@ body {
 main {
 	background-color: indianred;
 	width: 100%;
-	height: 300px;
 }
 /*
 .modal {
@@ -204,22 +203,123 @@ footer {
 	background: black;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 720px) {
 	.main-nav {
 		display: flex;
 		flex-direction: column;
 		position: unset;
 		width: unset;
 	}
-}
 
-.main-nav--open {
-	transform: translateX(0);
-}
+	.main-nav--open {
+		transform: translateX(0);
+	}
 
-.hero {
-	background-image: url("public/images/website-hero-mobile.png");
-	height: 400px;
-	background-size: cover;
-	background-position: center;
+	.hero_box {
+		/* Hero Mobile */
+
+		position: relative;
+		width: 414px;
+		height: 896px;
+
+		background: #ffffff;
+	}
+
+	.hero {
+		background-image: url("public/images/website-hero-mobile.png");
+		height: 806px;
+		left: 0;
+		top: 0;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero_content {
+		/* Perfect Web Development */
+
+		position: absolute;
+		width: 350px;
+		height: 112px;
+		left: 32px;
+		bottom: 175px;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 56px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+
+		color: #ffffff;
+	}
+
+	.hero_name {
+		/* Jessica Wittig */
+		position: absolute;
+		width: 139px;
+		height: 21px;
+		left: 32px;
+		bottom: 122px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		/* identical to box height, or 117% */
+		color: #ffffff;
+	}
+
+	@media (min-width: 800px) {
+		.hero_box {
+			/* Hero Desktop */
+
+			position: relative;
+			width: 1440px;
+			height: 1024px;
+			flex-direction: row;
+
+			background: #ffffff;
+		}
+
+		.hero {
+			background-image: url("public/images/website-hero-desktop.png");
+			height: 806px;
+			left: 0;
+			top: 0;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.hero_content {
+			/* Perfect Web Development */
+
+			position: absolute;
+			width: 1312px;
+			height: 84px;
+			left: 64px;
+			bottom: 240px;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 72px;
+			line-height: 84px;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+
+			color: #ffffff;
+		}
+
+		.hero_name {
+			/* Maria Musterfrau */
+
+			position: absolute;
+			width: 278px;
+			height: 42px;
+			left: 64px;
+			bottom: 166px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 36px;
+			line-height: 42px;
+
+			color: #ffffff;
+		}
+	}
 }
