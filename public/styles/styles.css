@@ -1,165 +1,154 @@
-/**
- * Minimal Reset
- */
-body {
-	margin: 0;
-	background-color: cornflowerblue;
-}
+/*
+*Personal Webpage
+*Bootcamp neueFische
+*/
 
 *,
 *::before,
-*::after {
+*::after
+* {
 	box-sizing: border-box;
-}html {
-	 scroll-behavior: smooth; /*funktioniert noch nicht*/
-	 font-family: 'Roboto', sans-serif;
-	 font-size: 100%;
- }
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth; /*funktioniert noch nicht*/
+	font-size: 100%;
+}
+
+/* Layout* * * * * * */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	color: black;
+	background-color: darkgrey;
+	margin: 0 16px;
+}
 
 main {
-	color: black;
+	width: 100%;
+}
+
+.main-header {
+	position: sticky;
+	z-index: 2;
+	background-color: darkgrey;
+	top: 10px;
+	border-radius: 10px;
 }
 
 footer {
-	background: darkgrey;
-	color: black;
-}
+	background: #fff;
 
-.header {
-	background-color: rgb(197, 196, 196);
-	position: sticky;
-	top: 0px;
-	border-radius: 10px;
 }
-/* Navigation * * * * * * * * * noch in Arbeit
+/* Navigation * * * * * * * * * noch in Arbeit */
 
 .navigation{
-  margin: 50px 0 0;
+	margin: 20px 0 0;
 }
 
 .navigation ul li{
-  display: inline;
+	display: inline;
 }
 
 .navigation a{
-  color: #333;
-  text-decoration: none;
-  padding: 7px 20px;
-  margin: 10px 10px;
-  border: 1px solid #333;
-}
+	color: #333;
+	text-decoration: none;
+	padding: 7px 20px;
+	margin: 10px 10px;
+	border: 1px solid #333;
+	border-radius: 8px;
 
+}
 
 .navigation a:hover {
-  color: #333;
-  background: #fff;
+	color: #333;
+	background: #fff;
 }
-*/
 
-.test {
+/* Anker* * * * funktioniert noch nicht*/
+#test {
 	margin-top: 100vh;
 	height: 100vh;
 }
-/* Card */
 
-/* Auto Layout -noch in Arbeit */
-.adress-card {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+/* Card *//* Auto Layout -noch in Arbeit */
+.card__header{
+}
+.card__box {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+}
+
+.card__area{
 	padding: 16px;
-
-	position: static;
-	width: 800px;
-	height: 283px;
-	left: 0px;
-	top: 0px;
-
-	background: rgb(197, 196, 196);
-	/* Boxshadow_01 */
-	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-	border-radius: 16px;
-
-	/* Inside Auto Layout*/
-	flex: none;
-	order: 0;
-	flex-grow: 0;
-	margin: 24px 0px;
+	font-size: 14px;
+	line-height: 20px;
+	background: #fff;
+	color: #202020;
+	box-shadow: 0px 0px 16px rgba(0,0,0,0.05);
+	border-radius: 8px;
 }
 
 .card__image {
-	background: blueviolet;
 	width: 128px;
 	height: 128px;
+	border-radius: 8px;
 }
+
 .card__headline {
-	position: static;
+	text-transform: uppercase;
+	font-weight: bold;
 	width: 62px;
 	height: 19px;
-	left: 0px;
-	top: 0px;
-
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 19px;
-	/* identical to box height */
-
+	color: #202020;
 	letter-spacing: 0.05em;
-	text-transform: uppercase;
-
-	color: #202020;
 }
-.card__author {
-	position: static;
-	width: 122px;
-	height: 20px;
-	left: 0px;
-	top: 27px;
-
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 20px;
-	/* identical to box height, or 143% */
-
-
-	color: #202020;
-}
-card__myaccount{
-	position: static;
-	width: 70px;
-	height: 14px;
-	left: 0px;
-	top: 0px;
-
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 300;
+.link{
 	font-size: 12px;
 	line-height: 14px;
-	color: #6F6F6F;
+	text-decoration: none;
 }
-.card__action {
 
+.link:hover{
+	text-decoration: underline;
+}
+
+.link--light{
+	color: #6F6F6F
 }
 
 .icon-button {
+	/* arrow-right-circle */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: cornflowerblue;
+	position: static;
+	font-size: 24px;
 	width: 48px;
 	height: 48px;
+	left: 0px;
+	margin: 0 0 -10px -10px;
 	padding: 0;
 	border: 0;
 	border-radius: 50%;
-	/*an dieser Stelle den Button unsichtbar vergrößern Stichwort: accecibilty */
+	background: none;
 }
-
+/*an dieser Stelle den Button unsichtbar vergrößern Stichwort: accecibilty */
 .icon-button:hover {
 	color:red;
-	width: 48px;
-	height: 48px;
-	padding: 0;
-	border: 0;
+}
+
+.icon-button: active {
+	background: darkblue;
+}
+
+.icon-button_icon {
+	height: 1em;
+	width: 1em‚;
 }
 
