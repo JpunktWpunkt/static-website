@@ -26,26 +26,30 @@ body {
 }
 
 main {
+	background-color: indianred;
 	width: 100%;
+	height: 300px;
 }
+/*
 .modal {
 	height: 80vh;
 	overflow: auto;
 	background-color: yellow;
 	scroll-behavior: smooth;
 }
-
+*/
 .main-header {
 	position: sticky;
 	z-index: 2;
-	background-color: darkgrey;
+	background-color: blue;
 	top: 20px;
 	border-radius: 10px;
 	height: 160px;
 }
 
 footer {
-	background: #fff;
+	background: darkgreen;
+	height: 300px;
 }
 /* Navigation * * * * * * * * * noch in Arbeit */
 
@@ -211,4 +215,11 @@ footer {
 
 .main-nav--open {
 	transform: translateX(0);
+}
+
+.hero {
+	background-image: url("public/images/website-hero-mobile.png");
+	height: 400px;
+	background-size: cover;
+	background-position: center;
 }
