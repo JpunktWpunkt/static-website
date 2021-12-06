@@ -175,3 +175,40 @@ footer {
 .-start-1 {
 	grid-column-start: 3;
 }
+
+/* Burger Menu* * * */
+
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	background: orange;
+	transition: transform 2s;
+}
+.main-nav_link {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	color: currentColor;
+}
+
+.main-nav_link:hover {
+	background: black;
+}
+
+@media (min-width: 500px) {
+	.main-nav {
+		display: flex;
+		flex-direction: column;
+		position: unset;
+		width: unset;
+	}
+}
+
+.main-nav--open {
+	transform: translateX(0);
+}
